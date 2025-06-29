@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>A Message For You 💌</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Optional background music -->
+  <!-- <audio src="love.mp3" autoplay loop></audio> -->
+
+  <div class="envelope" onclick="openCard()">
+    <div class="flap" id="flap"></div>
+    <div class="message-card" id="card">
+      <h2>You're Special ❤️</h2>
+      <p>
+        From the moment I met you,<br>
+        You made my world brighter ✨<br>
+        Just a little message to say...<br>
+        You're amazing 💖
+      </p>
+      <div class="from">– Khushwant 💌</div>
+    </div>
+  </div>
+
+  <script>
+    function openCard() {
+      document.getElementById('card').classList.toggle('open');
+      document.getElementById('flap').classList.toggle('hide');
+    }
+  </script>
+</body>
+</html>
